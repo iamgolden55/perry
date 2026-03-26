@@ -51,21 +51,21 @@ export default function Hero() {
 
       <div className="hero__container">
         <h1 className="hero__title">
-          <span className="hero__line hero__line--1">AWARD&mdash;WINNING</span>
-          <span className="hero__line hero__line--2 font-curvy">PHOTOGRAPHY</span>
-          <span className="hero__line hero__line--3">STUDIO</span>
+          <span className="hero__line hero__line--1">PERRY</span>
+          <span className="hero__line hero__line--2 font-curvy">JIGGY</span>
+          <span className="hero__line hero__line--3">VISUALS</span>
         </h1>
 
         <div className="hero__bottom-row">
           <div className="hero__actions">
             <Link href="#quote" className="button button--primary">
-              GET A QUOTE
+              START A PROJECT
             </Link>
           </div>
           <p className="hero__subtitle">
-            We capture atmosphere,
+            Bold visual storytelling
             <br />
-            emotion, and the in&#8209;between.
+            across fashion, music, and culture.
           </p>
         </div>
       </div>

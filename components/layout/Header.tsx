@@ -60,8 +60,8 @@ export default function Header() {
 
       <div className={`mobile-menu${menuOpen ? " is-open" : ""}`}>
         <nav className="mobile-nav__links">
-          <Link href="/#studio" className="mobile-nav__link" onClick={closeMenu}>
-            Studio
+          <Link href="/about" className="mobile-nav__link" onClick={closeMenu}>
+            About
           </Link>
           <Link href="/#works" className="mobile-nav__link" onClick={closeMenu}>
             Works
@@ -85,7 +85,7 @@ export default function Header() {
             className="button button--primary button--full"
             onClick={closeMenu}
           >
-            GET A QUOTE
+            START A PROJECT
           </Link>
           <div className="mobile-nav__cities">
             <span>NY</span> &bull; <span>LDN</span> &bull; <span>TKY</span>

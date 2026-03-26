@@ -63,14 +63,14 @@ export default function Direction() {
               />
             </div>
             <p className="direction__body">
-              Every brand has a story &mdash; we&rsquo;re here to frame yours.
-              Reach out and let&rsquo;s shape something meaningful, together.
+              Intentional visuals built with clarity, style, and purpose.
+              Reach out to shape something bold and lasting.
             </p>
           </div>
 
           <div className="direction__cta">
             <Link href="#quote" className="button button--primary">
-              GET A QUOTE
+              START A PROJECT
             </Link>
           </div>
         </div>

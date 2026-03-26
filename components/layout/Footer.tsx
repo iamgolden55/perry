@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="footer__col footer__col--pages">
               <h4 className="footer__heading">PAGES</h4>
               <ul className="footer__links">
-                <li><Link href="/#studio">Studio</Link></li>
+                <li><Link href="/about">About</Link></li>
                 <li><Link href="/#works">Works</Link></li>
                 <li><Link href="/#services">Services</Link></li>
                 <li><Link href="/#journal">Journal</Link></li>

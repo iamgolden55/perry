@@ -1,43 +1,56 @@
 import Image from "next/image";
+import Link from "next/link";
 import ScrollReveal from "@/components/shared/ScrollReveal";
 
 export default function WhoWeAre() {
   return (
-    <section className="who-we-are noise-bg" id="studio">
+    <section className="who-we-are" aria-labelledby="about-preview-title">
       <div className="section__container who-we-are__container">
-        <div className="who-we-are__images hidden-mobile">
-          <ScrollReveal className="img-left">
+        <ScrollReveal className="who-we-are__media">
+          <div className="who-we-are__media-frame">
             <Image
-              src="/images/knit-hood.jpg"
-              alt="Black and white close-up portrait with knit hood"
-              width={320}
-              height={400}
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-              loading="lazy"
+              src="/images/portrait-study.jpg"
+              alt="Perry Jiggy portrait study"
+              fill
+              sizes="(max-width: 767px) 100vw, (max-width: 1023px) 80vw, 42vw"
+              className="who-we-are__image"
+              priority={false}
             />
-          </ScrollReveal>
-          <ScrollReveal className="img-right" delay=".15s">
-            <Image
-              src="/images/full-body-fashion.jpg"
-              alt="Black and white full-body fashion portrait"
-              width={280}
-              height={380}
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-              loading="lazy"
-            />
-          </ScrollReveal>
+          </div>
+        </ScrollReveal>
+
+        <div className="who-we-are__content">
+          <p className="kicker">About Perry</p>
+          <h2 className="who-we-are__title" id="about-preview-title">
+            Visual direction with a sharper <span className="font-curvy">point</span>{" "}
+            of view.
+          </h2>
+          <p className="who-we-are__intro">
+            Perry Jiggy is a Creative Director, Photographer, and Visual Director
+            building bold image worlds across fashion, music, and commercial
+            storytelling.
+          </p>
+          <div className="who-we-are__actions">
+            <Link href="/about" className="button button--primary">
+              ABOUT PERRY
+            </Link>
+          </div>
         </div>
 
-        <div className="section__header text-center label-center">
-          <p className="kicker">&#9632; WHO WE ARE</p>
-          <h2 className="who-we-are__title">
-            A COLLECTIVE OF EXPERTS
-            <br />
-            COMMITTED TO
-            <br />
-            DELIVERING <span className="font-curvy">WORK</span>
-          </h2>
-        </div>
+        <ScrollReveal className="who-we-are__detail" delay=".12s">
+          <div className="who-we-are__detail-card">
+            <p className="who-we-are__detail-label">Focus</p>
+            <ul className="who-we-are__detail-list">
+              <li>Creative Direction</li>
+              <li>Photography</li>
+              <li>Visual Direction</li>
+            </ul>
+            <p className="who-we-are__detail-copy">
+              A concise introduction on the homepage. The full story now lives on
+              the dedicated about page.
+            </p>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

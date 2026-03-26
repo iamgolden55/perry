@@ -39,7 +39,7 @@ export default function FeaturedWork() {
       <div className="section__container">
         <div className="section__header-row">
           <div className="section__header">
-            <p className="kicker">our work</p>
+            <p className="kicker">selected work</p>
             <h2 className="section__title">
               FEATURED <span className="font-curvy">WORK</span>
             </h2>
@@ -80,7 +80,7 @@ export default function FeaturedWork() {
 
         <div className="section__actions mobile-only">
           <Link href="#quote" className="button button--primary button--full">
-            GET A QUOTE
+            START A PROJECT
           </Link>
         </div>
       </div>

@@ -21,9 +21,9 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Perry Jiggy | Award-Winning Photography",
+  title: "Perry Jiggy | Creative Director, Photographer, Visual Director",
   description:
-    "Award-winning photography studio capturing atmosphere, emotion, and the in-between.",
+    "Bold visual storytelling across photography, music videos, and commercial projects.",
 };
 
 export default function RootLayout({
